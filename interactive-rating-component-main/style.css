@@ -118,7 +118,6 @@ body {
 }
 
 .rating-numbers span {
-    background-color: #ffffff15;
     color: var(--White);
     padding: 1rem 0 0 0;
     text-align: center;
@@ -126,6 +125,14 @@ body {
     width: 3.5rem;
     height: 3.5rem;
     border-radius: 2.5rem;
+}
+
+span {
+    background-color: #ffffff15;
+}
+
+.active {
+    background-color: var(--MediumGrey);
 }
 
 .rating-button {
@@ -166,10 +173,6 @@ body {
     .rating-numbers span:hover {
         background-color: var(--Orange);
         cursor: pointer;
-    }
-
-    .rating-numbers span:active {
-        background-color: var(--MediumGrey);
     }
 
     .rating-button:hover {
