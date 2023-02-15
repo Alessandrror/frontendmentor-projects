@@ -28,7 +28,7 @@ body {
     justify-content: center;
     align-items: center;
     min-width: 375px;
-    height: 100vh;
+    height: auto;
 }
 
 .component {
@@ -141,7 +141,7 @@ body {
         justify-content: center;
         align-items: center;
         min-width: 375px;
-        height: auto;
+        height: 100vh;
     }
 
     .component {
