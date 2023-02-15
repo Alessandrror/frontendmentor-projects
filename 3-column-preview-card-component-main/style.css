@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+    --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    height: 100%;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 375px;
+}
+
+.component {
+    margin: 1rem 0;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.fuentes {
+    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.section1, .section2, .section3 {
+    max-width: 350px;
+    height: 450px;
+    padding: 3.25rem;
+}
+
+.section1 h2, .section2 h2, .section3 h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    color: var(--Transparent-white-paragraphs);
+    margin-top: 2rem;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+.section1 p, .section2 p, .section3 p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    line-height: 150%;
+    color: var(--Transparent-white-paragraphs);
+    margin-top: 2rem;
+}
+
+.section1 button, .section2 button, .section3 button {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    background-color: var(--Very-light-gray-background-headings-buttons);
+    border: none;
+    border-radius: 1.5rem;
+    height: 3rem;
+    width: 10rem;
+    margin-top: 1.5rem;
+}
+
+.section1 button {
+    color: var(--Bright-orange);
+}
+
+.section2 button {
+    color: var(--Dark-cyan);
+}
+
+.section3 button {
+    color: var(--Very-dark-cyan);
+}
+
+.section1 {
+    background-color: var(--Bright-orange);
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.section2 {
+    background-color: var(--Dark-cyan);
+}
+
+.section3 {
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.footer {
+    min-width: 350px;
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* @media (min-width: 1024px) {
+
+    .component {
+        grid-template-columns: auto auto auto;
+    }
+
+    .section1 {
+        border-radius: 0.5rem 0 0 0.5rem;
+    }
+    
+    .section3 {
+        border-radius: 0 0.5rem 0.5rem 0;
+    }
+
+    .footer {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: 0;
+        min-width: 350px;
+    }
+
+} */
