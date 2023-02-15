@@ -20,6 +20,7 @@
 
 body {
     height: 100%;
+    background-color: var(--Very-light-gray-background-headings-buttons);
 }
 
 .main {
@@ -27,6 +28,7 @@ body {
     justify-content: center;
     align-items: center;
     min-width: 375px;
+    height: 100vh;
 }
 
 .component {
@@ -34,6 +36,7 @@ body {
     border-radius: 1rem;
     display: grid;
     grid-template-columns: auto;
+    height: fit-content;
 }
 
 .fuentes {
@@ -50,7 +53,7 @@ body {
 .section1 h2, .section2 h2, .section3 h2 {
     font-family: 'Big Shoulders Display', cursive;
     font-weight: 700;
-    color: var(--Transparent-white-paragraphs);
+    color: var(--Very-light-gray-background-headings-buttons);
     margin-top: 2rem;
     text-transform: uppercase;
     font-size: 2.5rem;
@@ -73,6 +76,13 @@ body {
     height: 3rem;
     width: 10rem;
     margin-top: 1.5rem;
+}
+
+.section1 button:hover, .section2 button:hover, .section3 button:hover {
+    background-color: transparent;
+    color: var(--Transparent-white-paragraphs);
+    cursor: pointer;
+    border: 0.25rem solid var(--Very-light-gray-background-headings-buttons);
 }
 
 .section1 button {
@@ -105,15 +115,34 @@ body {
     min-width: 350px;
 }
 .attribution {
+    color: var(--Bright-orange);
     font-size: 11px;
     text-align: center;
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: var(--Dark-cyan);
 }
 
-/* @media (min-width: 1024px) {
+.attribution a:hover {
+    color: var(--Very-dark-cyan);
+}
+
+@media (min-width: 1024px) {
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 375px;
+        height: auto;
+    }
 
     .component {
         grid-template-columns: auto auto auto;
@@ -127,6 +156,15 @@ body {
         border-radius: 0 0.5rem 0.5rem 0;
     }
 
+    .section1, .section2, .section3 {
+        height: 500px;
+        padding: 3.25rem 4.5rem 3.25rem 3.25rem;
+    }
+    
+    .section1 button, .section2 button, .section3 button {
+        margin-top: 5rem;
+    }
+
     .footer {
         position: absolute;
         bottom: 0;
@@ -136,4 +174,4 @@ body {
         min-width: 350px;
     }
 
-} */
+}
