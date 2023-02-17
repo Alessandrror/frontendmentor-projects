@@ -1,9 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --soft-red: hsl(14, 88%, 65%);
+
+    --soft-violet: hsl(273, 75%, 66%);
+    --soft-blue: hsl(240, 73%, 65%);
+
+    --very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --dark-grayish-blue: hsl(240, 6%, 50%);
+
+    --light-grayish-blue: hsl(240, 5%, 91%);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     text-decoration: none;
     color: black;
+    font-size: 12px;
+    font-family: 'Kumbh Sans', sans-serif;
 }
 
 body {
@@ -16,12 +33,20 @@ body {
 
 .main {
     background-color: white;
-    /* height: 400px; */
-    width: 350px;
+    width: 375px;
+    border-radius: 2rem;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 0.5fr 1fr;
 }
 
 .faq-svg {
+    width: 350px;
     position: relative;
+}
+
+.faq-info {
+    width: 350px;
 }
 
 .faq-svg picture > * {
@@ -46,11 +71,13 @@ body {
     color: hsl(228, 45%, 44%);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 800px) {
 
     .main {
         height: 400px;
         width: 750px;
+        grid-template-columns: auto auto;
+        grid-template-rows: 1fr 1fr;
     }
 
 }
