@@ -1,5 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main {
+    background-color: white;
+    height: 400px;
+    width: 750px;
+}
+
+.faq-svg {
+    position: relative;
+}
+
+.faq-svg picture > * {
+    position: absolute;
+    width: 15rem;
+}
+
 .footer {
-    
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
 }
 
 .attribution {
