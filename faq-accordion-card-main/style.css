@@ -16,8 +16,8 @@ body {
 
 .main {
     background-color: white;
-    height: 400px;
-    width: 750px;
+    /* height: 400px; */
+    width: 350px;
 }
 
 .faq-svg {
@@ -44,4 +44,13 @@ body {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1024px) {
+
+    .main {
+        height: 400px;
+        width: 750px;
+    }
+
 }
