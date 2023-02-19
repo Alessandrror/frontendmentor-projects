@@ -13,6 +13,10 @@
     --light-grayish-blue: hsl(240, 5%, 91%);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -29,6 +33,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    transition: 2s;
 }
 
 .main {
@@ -52,6 +57,15 @@ body {
 
 .faq-info {
     width: 350px;
+}
+
+.faq-box {
+    .faq-question {
+        font-weight: 400;
+    }
+    .faq-question-active {
+        font-weight: 700;
+    }
 }
 
 .footer {
