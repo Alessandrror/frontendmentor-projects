@@ -1,5 +1,5 @@
-let active = 0;
-let innactive = 1;
-var togbtn = document.getElementsByClassName('toggle-btn');
+// let active = 0;
+// let innactive = 1;
+document.getElementsByClassName('toggle-btn').addEventListener('click', displayInfo);
 
-// let btn = addEventListener('click', (togbtn) => document.getElementsByClassName('faq-answer').classList.toggle('appear'));
+const displayInfo = () => document.getElementsByClassName('faq-answer').classList.add('appear');
