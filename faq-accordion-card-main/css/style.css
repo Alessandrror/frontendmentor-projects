@@ -37,12 +37,17 @@ body {
   grid-template-rows: auto auto; }
   .main .faq-svg {
     width: 350px;
+    height: 100px;
     position: relative;
     grid-row: 1/2;
     grid-column: 1/2; }
     .main .faq-svg picture > * {
+      width: 15rem;
       position: absolute;
-      width: 15rem; }
+      top: 0;
+      right: 0;
+      left: 0;
+      margin: auto; }
   .main .faq-info {
     width: 350px;
     grid-row: 2/3;
@@ -51,26 +56,33 @@ body {
       font-size: 3rem;
       font-weight: 700;
       color: var(--very-dark-desaturated-blue); }
-    .main .faq-info .faq-box .faq-question {
-      transition: 0.75s;
-      font-weight: 400;
-      color: var(--very-dark-desaturated-blue); }
-    .main .faq-info .faq-box .faq-question-active {
-      color: var(--very-dark-desaturated-blue); }
-    .main .faq-info .faq-box .toggle-btn {
-      transition: 0.75s;
-      transform: rotateX(0deg);
-      background-color: transparent;
-      border: none; }
-    .main .faq-info .faq-box .toggle-btn-active {
-      transform: rotateX(180deg); }
-    .main .faq-info .faq-box hr {
-      background-color: var(--very-dark-desaturated-blue);
-      opacity: 0.2; }
-    .main .faq-info .faq-box .faq-answer {
-      color: var(--dark-grayish-blue);
-      transition: 0.5s;
-      transform: translateY(0rem); }
+    .main .faq-info .faq-box {
+      margin: 2.5rem 20px 0 20px;
+      width: 340px; }
+      .main .faq-info .faq-box .faq-box-inline {
+        display: flex;
+        justify-content: space-between; }
+      .main .faq-info .faq-box .faq-question {
+        transition: 0.75s;
+        font-weight: 400;
+        color: var(--very-dark-desaturated-blue); }
+      .main .faq-info .faq-box .faq-question-active {
+        color: var(--very-dark-desaturated-blue);
+        font-weight: 700; }
+      .main .faq-info .faq-box .toggle-btn {
+        transition: 0.75s;
+        transform: rotateX(0deg);
+        background-color: transparent;
+        border: none; }
+      .main .faq-info .faq-box .toggle-btn-active {
+        transform: rotateX(180deg); }
+      .main .faq-info .faq-box hr {
+        background-color: var(--very-dark-desaturated-blue);
+        opacity: 0.2; }
+      .main .faq-info .faq-box .faq-answer {
+        color: var(--dark-grayish-blue);
+        transition: 0.5s;
+        transform: translateY(0rem); }
 
 .footer {
   position: absolute;

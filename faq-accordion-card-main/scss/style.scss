@@ -46,13 +46,18 @@ body {
 
     .faq-svg {
         width: 350px;
+        height: 100px;
         position: relative;
         grid-row: 1/2;
         grid-column: 1/2;
-    
+
         picture > * {
-            position: absolute;
             width: 15rem;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
         }
     }
 
@@ -68,6 +73,14 @@ body {
         }
     
         .faq-box {
+            margin: 2.5rem 20px 0 20px;
+            width: 340px;
+
+            .faq-box-inline {
+                display: flex;
+                justify-content: space-between;
+            }
+            
             .faq-question {
                 transition: 0.75s;
                 font-weight: 400;
@@ -75,6 +88,7 @@ body {
             }
             .faq-question-active {
                 color: var(--very-dark-desaturated-blue);
+                font-weight: 700;
             }
             
             .toggle-btn {
